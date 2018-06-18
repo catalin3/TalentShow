@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+     http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+
+    <bean id="jdbcUtils" class="talentshow.persistance.JdbcUtils"/>
+
+    <bean id="noteRepo" class="talentshow.persistance.NotaRepository">
+        <constructor-arg ref="jdbcUtils"/>
+    </bean>
+
+    <bean id="organizatorRepo" class="talentshow.persistance.JuriuRepository">
+        <constructor-arg ref="jdbcUtils"/>
+    </bean>
+
+    <bean id="participantRepo" class="talentshow.persistance.ParticipantRepository">
+    </bean>
+
+    <bean id="service" class="talentshow.server.ServerImpl">
+        <constructor-arg ref="organizatorRepo"/>
+        <constructor-arg ref="participantRepo"/>
+        <constructor-arg ref="noteRepo"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="TalentShow"/>
+        <property name="service" ref="service"/>
+        <property name="serviceInterface" value="talentshow.service.IServer"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+
+</beans>
