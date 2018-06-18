@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="403.0"  xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="talentshow.controller.LoginViewController">
+   <center>
+      <AnchorPane prefHeight="261.0" prefWidth="403.0"  BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelUsername" layoutX="51.0" layoutY="83.0" text="Username" />
+            <TextField fx:id="textfieldUsername" layoutX="179.0" layoutY="78.0" prefHeight="32.0" prefWidth="190.0" />
+            <Label fx:id="labelParola" layoutX="66.0" layoutY="141.0" text="Parola" />
+            <Button fx:id="buttonAutentificare" layoutX="143.0" layoutY="211.0" mnemonicParsing="false" onAction="#handleButtonAutentificare" text="Autentificare" />
+            <PasswordField fx:id="textfieldParola" layoutX="180.0" layoutY="136.0" prefHeight="32.0" prefWidth="190.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

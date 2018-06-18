@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="TalentShow" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Client_main" target="1.8" />
+      <module name="Client_test" target="1.8" />
+      <module name="Model_main" target="1.8" />
+      <module name="model_main" target="1.8" />
+      <module name="Model_test" target="1.8" />
+      <module name="model_test" target="1.8" />
+      <module name="Persistance_main" target="1.8" />
+      <module name="Persistance_test" target="1.8" />
+      <module name="Server_main" target="1.8" />
+      <module name="Server_test" target="1.8" />
+      <module name="Service_main" target="1.8" />
+      <module name="Service_test" target="1.8" />
+      <module name="TalentShow" target="1.5" />
+      <module name="TalentShow-Service_main" target="1.8" />
+      <module name="TalentShow-Service_test" target="1.8" />
+      <module name="TalentShow_main" target="1.8" />
+      <module name="TalentShow_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

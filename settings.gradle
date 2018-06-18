@@ -1,0 +1,7 @@
+rootProject.name = 'TalentShow'
+include 'Client'
+include 'Server'
+include 'Persistance'
+include 'Model'
+include 'Service'
+

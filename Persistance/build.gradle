@@ -1,0 +1,17 @@
+group 'TalentShow'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //compile projects(':Model')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.hibernate:hibernate-core:5.2.10.Final'
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.8.RELEASE'
+}
